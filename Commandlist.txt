@@ -35,6 +35,7 @@ development:
       database: ss_sample
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+cp config/defaults/environment.yml config/
 vi config/environment.yml
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # default environment
