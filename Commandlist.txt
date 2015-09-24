@@ -57,7 +57,7 @@ rake unicorn:start
 # Mongoドキュメント確認
 mongo
 use ss_sample
-db.cms_pages.find({route: "blog/page"})
+db.cms_pages.find({route: "blog/page"}).pretty()
 
 # 天気入力フォーム作成
 git checkout -b sample-blog-addon origin/sample-blog-addon
