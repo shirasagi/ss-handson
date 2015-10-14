@@ -1,20 +1,3 @@
-# MongoDBのインストール
-sudo vi /etc/yum.repos.d/mongodb-org-3.0.repo
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[mongodb-org-3.0]
-name=MongoDB Repository
-baseurl=http://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/x86_64/
-gpgcheck=0
-enabled=1
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-sudo yum install mongodb-org
-sudo service mongod start
-
-# Prequicities
-sudo yum install wget git ImageMagick ImageMagick-devel
-
-
 # ハンズオン用シラサギインストール
 git clone https://github.com/itowtips/ss-handson sample
 cd sample
