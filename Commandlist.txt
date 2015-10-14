@@ -33,6 +33,9 @@ rake db:seed name=users site=www
 rake db:seed name=demo site=www
 rake unicorn:start
 
+# 記事モジュールのルーティング確認
+rake routes | grep article
+
 # ブログページ作成
 git checkout -b sample-blog-page origin/sample-blog-page
 rake unicorn:stop
