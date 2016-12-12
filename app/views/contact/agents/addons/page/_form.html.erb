@@ -53,4 +53,7 @@
 
   <dt><%= @model.t :contact_link_name %><%= @model.tt :contact_link_name %></dt>
   <dd><%= f.text_field :contact_link_name, value: (params[:action] =~ /new/) ? @cur_group[:contact_link_name] : @item.contact_link_name %></dd>
+
+  <dt><%= @model.t :contact_night_window %><%= @model.tt :contact_night_window %></dt>
+  <dd><%= f.text_field :contact_night_window %></dd>
 </dl>

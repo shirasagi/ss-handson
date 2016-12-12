@@ -21,6 +21,7 @@ ja:
       email: E-Mail
       link_url: リンクURL
       link_name: リンク名
+      night_window: 夜間窓口
 
   modules:
     contact: 連絡先
@@ -40,6 +41,7 @@ ja:
         contact_email: メールアドレス
         contact_link_url: リンクURL
         contact_link_name: リンク名
+        contact_night_window: 夜間窓口
       contact/addon/group:
         <<: *cmspage
       contact/addon/page:
@@ -63,6 +65,8 @@ ja:
         - 連絡先に表示する部署のリンクURLを記入します。
       contact_link_name:
         - 連絡先に表示する部署のリンク名を記入します。
+      contact_night_window:
+        - 連絡先に表示する夜間窓口を記入します。
     contact/addon/group:
       contact_tel:
         - グループの電話番号を記入します。

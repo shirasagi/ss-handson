@@ -31,5 +31,11 @@
         <dd><%= link_to @cur_page.contact_link, @cur_page.contact_link_url %></dd>
       </dl>
     <% end %>
+    <% if @cur_page.contact_night_window.present? %>
+      <dl class="night-window">
+        <dt><%= "#{t("contact.view.night_window")}:" %></dt>
+        <dd><%= @cur_page.contact_night_window %></dd>
+      </dl>
+    <% end %>
   </footer>
 <% end %>
