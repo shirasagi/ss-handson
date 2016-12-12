@@ -16,6 +16,7 @@ class Article::Page
   include Event::Addon::Date
   include Map::Addon::Page
   include Cms::Addon::RelatedPage
+  include Cms::Addon::Weather
   include Contact::Addon::Page
   include Cms::Addon::Tag
   include Cms::Addon::OpendataRef::Dataset

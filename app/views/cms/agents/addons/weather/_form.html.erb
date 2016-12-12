@@ -1,0 +1,4 @@
+<dl class="see mod-cms-weather">
+  <dt><%= @model.t :weather %><%= @model.tt :weather %></dt>
+  <dd><%= f.select :weather, @item.weather_options, include_blank: true %></dd>
+</dl>

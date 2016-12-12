@@ -402,6 +402,7 @@ ja:
       cms/form/page: 定型フォーム
       cms/column/text_like: 制約条件
       cms/column/select_like: 選択
+      cms/weather: 天気
 
   mongoid:
     models:
@@ -733,6 +734,8 @@ ja:
       cms/column/file_upload:
         html_tag: HTMLタグ
         html_additional_attr: HTML追加属性
+      cms/addon/weather:
+        weather: 天気
 
   errors:
     messages:
@@ -1649,6 +1652,10 @@ ja:
       select_options:
         - 回答の選択肢を入力します。
         - テキストを改行で区切ることで複数の選択肢を入力することができます。
+
+    cms/addon/weather:
+      weather:
+        - 天気を選択します。
 
   all_content:
     page_id: ページID

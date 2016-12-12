@@ -1,0 +1,5 @@
+<% if @cur_page.weather.present? %>
+  <span class="weather <%= @cur_page.weather %>">
+    <%= @cur_page.label :weather %>
+  </span>
+<% end %>
