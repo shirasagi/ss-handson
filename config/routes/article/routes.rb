@@ -56,6 +56,7 @@ SS::Application.routes.draw do
     resources :pages, concerns: [
       :deletion, :copy, :move, :lock, :download, :import, :command, :opendata_ref, :contains_urls, :tag
     ]
+    resources :weather_searches, concerns: [:deletion]
   end
 
   content "article" do
@@ -69,6 +70,7 @@ SS::Application.routes.draw do
   node "article" do
     get "page/(index.:format)" => "public#index", cell: "nodes/page"
     get "page/rss.xml" => "public#rss", cell: "nodes/page", format: "xml"
+    get "weather_search/(index.:format)" => "public#index", cell: "nodes/weather_search"
   end
 
   part "article" do

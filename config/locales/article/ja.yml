@@ -12,6 +12,7 @@ ja:
   cms:
     nodes:
       article/page: 記事リスト
+      article/weather_search: 天気検索
     parts:
       article/page: 記事リスト
       article/page_navi: 記事ナビゲーション

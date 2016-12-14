@@ -1,0 +1,20 @@
+<%= form_tag @cur_node.url, method: "get" do |f| %>
+  <h2>天気</h2>
+  <div class="weather">
+    <label><%= check_box_tag 'weathers[]', 'sunny' %>晴れ</label>
+    <label><%= check_box_tag 'weathers[]', 'cloudy' %>曇り</label>
+    <label><%= check_box_tag 'weathers[]', 'rain' %>雨</label>
+    <label><%= check_box_tag 'weathers[]', 'snow' %>雪</label>
+  </div>
+  <footer class="send">
+    <%= submit_tag '検索', name: nil %>
+  </footer>
+<% end %>
+
+<% if @items.present? %>
+  <div class="pages">
+    <%= render_page_list %>
+  </div>
+
+  <%= paginate @items if @items.try(:current_page) %>
+<% end %>
