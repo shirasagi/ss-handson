@@ -76,6 +76,7 @@ SS::Application.routes.draw do
   part "article" do
     get "page" => "public#index", cell: "parts/page"
     get "page_navi" => "public#index", cell: "parts/page_navi"
+    get "weather_search" => "public#index", cell: "parts/weather_search"
   end
 
   page "article" do

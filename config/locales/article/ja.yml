@@ -16,6 +16,7 @@ ja:
     parts:
       article/page: 記事リスト
       article/page_navi: 記事ナビゲーション
+      article/weather_search: 天気検索
 
   cms_role:
     read_other_article_pages: ページの閲覧（全て）
