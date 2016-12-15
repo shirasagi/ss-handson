@@ -1,0 +1,5 @@
+<% if @cur_page.video_id.present? %>
+  <iframe id="ytplayer" type="text/html" width="640" height="360"
+    src="http://www.youtube.com/embed/<%= @cur_page.video_id %>"
+    frameborder="0"/>
+<% end %>

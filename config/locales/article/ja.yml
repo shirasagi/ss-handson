@@ -5,9 +5,12 @@ ja:
       next: 次のページ
       prev: 前のページ
       back_to_index: 一覧へ戻る
+    video_page: ビデオページ
 
   modules:
     article: 記事
+    addons:
+      article/video: ビデオ
 
   cms:
     nodes:
@@ -36,12 +39,23 @@ ja:
     reroute_private_article_pages: ページの承認経路変更（所有）
     revoke_other_article_pages: ページの承認申請取消（全て）
     revoke_private_article_pages: ページの承認申請取消（所有）
+    read_private_article_video_pages: ビデオページの閲覧（所有）
+    read_other_article_video_pages: ビデオページの閲覧（全て）
+    edit_private_article_video_pages: ビデオページの編集（所有）
+    edit_other_article_video_pages: ビデオページの編集（全て）
+    delete_private_article_video_pages: ビデオページの削除（所有）
+    delete_other_article_video_pages: ビデオページの削除（全て）
+    release_private_article_video_pages: ビデオページの公開（所有）
+    release_other_article_video_pages: ビデオページの公開（全て）
 
   mongoid:
     models:
       article/page: 記事ページ
       article/node/page: 記事リスト
       article/part/node: 記事リスト
+    attributes:
+      article/addon/video:
+        video_id: ビデオID
 
   job:
     models:

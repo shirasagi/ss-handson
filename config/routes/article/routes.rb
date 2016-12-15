@@ -57,6 +57,7 @@ SS::Application.routes.draw do
       :deletion, :copy, :move, :lock, :download, :import, :command, :opendata_ref, :contains_urls, :tag
     ]
     resources :weather_searches, concerns: [:deletion]
+    resources :video_pages, concerns: [:deletion]
   end
 
   content "article" do
@@ -81,6 +82,7 @@ SS::Application.routes.draw do
 
   page "article" do
     get "page/:filename.:format" => "public#index", cell: "pages/page"
+    get "video_page/:filename.:format" => "public#index", cell: "pages/video_page"
   end
 
 end
