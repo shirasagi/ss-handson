@@ -1,8 +1,9 @@
 <%= form_tag @cur_node.url, method: "get" do |f| %>
   <h2><%= t("modules.addons.cms/weather") %></h2>
   <div class="weather">
+    <% weathers = params[:weathers] || [] %>
     <% %w(sunny cloudy rain snow).each do |code| %>
-      <label><%= check_box_tag 'weathers[]', code %><%= t("cms.options.weather.#{code}") %></label>
+      <label><%= check_box_tag 'weathers[]', code, weathers.include?(code) %><%= t("cms.options.weather.#{code}") %></label>
     <% end %>
   </div>
   <footer class="send">
