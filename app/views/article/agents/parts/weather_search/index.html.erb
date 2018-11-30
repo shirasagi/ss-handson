@@ -1,12 +1,11 @@
 <%= form_tag @cur_part.parent.url, method: "get" do |f| %>
-  <h2>天気</h2>
+  <h2><%= t("modules.addons.cms/weather") %></h2>
   <div class="weather">
-    <label><%= check_box_tag 'weathers[]', 'sunny' %>晴れ</label>
-    <label><%= check_box_tag 'weathers[]', 'cloudy' %>曇り</label>
-    <label><%= check_box_tag 'weathers[]', 'rain' %>雨</label>
-    <label><%= check_box_tag 'weathers[]', 'snow' %>雪</label>
+    <% %w(sunny cloudy rain snow).each do |code| %>
+      <label><%= check_box_tag 'weathers[]', code %><%= t("cms.options.weather.#{code}") %></label>
+    <% end %>
   </div>
   <footer class="send">
-    <%= submit_tag '検索', name: nil %>
+    <%= submit_tag t("ss.buttons.search"), name: nil %>
   </footer>
 <% end %>

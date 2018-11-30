@@ -221,6 +221,11 @@ ja:
       max_name_length:
         '80': 80文字
         '0': 無制限
+      weather:
+        sunny: 晴れ
+        cloudy: 曇り
+        rain: 雨
+        snow: 雪
 
     sns_share:
       fb_like: Facebook いいね！
