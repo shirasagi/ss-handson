@@ -8,6 +8,7 @@
   </div>
   <footer class="send">
     <%= submit_tag t("ss.buttons.search"), name: nil %>
+    <%= link_to t("ss.buttons.reset"), @cur_node.url, class: 'btn' %>
   </footer>
 <% end %>
 
