@@ -1,4 +1,5 @@
-<%= form_tag @cur_part.parent.url, method: "get" do |f| %>
+<% url = @cur_part.search_node.present? ? @cur_part.search_node.url : @cur_part.parent.url %>
+<%= form_tag url, method: "get" do |f| %>
   <h2><%= t("modules.addons.cms/weather") %></h2>
   <div class="weather">
     <% %w(sunny cloudy rain snow).each do |code| %>

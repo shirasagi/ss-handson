@@ -20,6 +20,7 @@ module Article::Part
 
   class WeatherSearch
     include Cms::Model::Part
+    include Article::Addon::WeatherSearch
     include Cms::Addon::Release
     include Cms::Addon::GroupPermission
     include History::Addon::Backup
