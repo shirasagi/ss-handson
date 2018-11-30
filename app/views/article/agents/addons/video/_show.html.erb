@@ -1,4 +1,7 @@
 <dl class="see mod-article-video">
   <dt><%= @model.t :video_id %></dt>
   <dd><%= @item.video_id %></dd>
+
+  <dt><%= @model.t :size %></dt>
+  <dd><%= @item.width.to_s(:delimited) %> x <%= @item.height.to_s(:delimited) %></dd>
 </dl>

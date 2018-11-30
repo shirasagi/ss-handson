@@ -56,6 +56,16 @@ ja:
     attributes:
       article/addon/video:
         video_id: ビデオID
+        width: 横幅
+        height: 高さ
+        size: サイズ
+
+  tooltip:
+    article/addon/video:
+      video_id:
+        - YouTube のビデオ ID を入力してください。
+      size:
+        - ビデオの大きさを「横幅 x 高さ」の形式で入力してください。
 
   job:
     models:
