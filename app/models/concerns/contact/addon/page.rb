@@ -12,11 +12,13 @@ module Contact::Addon
       field :contact_link_url, type: String
       field :contact_link_name, type: String
       field :contact_night_window, type: String
+      field :contact_group_name, type: String
       belongs_to :contact_group, class_name: "SS::Group"
       permit_params :contact_state, :contact_group_id, :contact_charge
       permit_params :contact_tel, :contact_fax, :contact_email
       permit_params :contact_link_url, :contact_link_name
       permit_params :contact_night_window
+      permit_params :contact_group_name
     end
 
     def contact_state_options

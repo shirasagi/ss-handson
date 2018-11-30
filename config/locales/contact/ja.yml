@@ -42,6 +42,7 @@ ja:
         contact_link_url: リンクURL
         contact_link_name: リンク名
         contact_night_window: 夜間窓口
+        contact_group_name: 所属（表示）
       contact/addon/group:
         <<: *cmspage
       contact/addon/page:
@@ -67,6 +68,9 @@ ja:
         - 連絡先に表示する部署のリンク名を記入します。
       contact_night_window:
         - 連絡先に表示する夜間窓口を記入します。
+      contact_group_name:
+        - 連絡先に表示する表示用の所属を記入します。
+        - 所属に設定したグループではない名称を表示したい場合に設定してください。
     contact/addon/group:
       contact_tel:
         - グループの電話番号を記入します。
