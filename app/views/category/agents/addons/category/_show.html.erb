@@ -1,5 +1,22 @@
+<%= code_editor ".mod-category-category .html", mode: :html, readonly: true %>
+
 <% return "" if @item.categories.blank? %>
 
-<dl class="see">
+<dl class="see mod-category-category">
+  <dt class="wide"><%= @model.t :categories %></dt>
   <dd class="wide"><%= @item.send(:categories).pluck(:name).join(", ") %></dd>
+
+  <dt class="wide"><%= @model.t :category_upper_html %></dt>
+  <dd class="wide">
+    <% if @item.category_upper_html.present? %>
+    <%= text_area_tag :category_upper_html, @item.category_upper_html, class: "html" %>
+    <% end %>
+  </dd>
+
+  <dt class="wide"><%= @model.t :category_lower_html %></dt>
+  <dd class="wide">
+    <% if @item.category_lower_html.present? %>
+    <%= text_area_tag :category_lower_html, @item.category_lower_html, class: "html" %>
+    <% end %>
+  </dd>
 </dl>

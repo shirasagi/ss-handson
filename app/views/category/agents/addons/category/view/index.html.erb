@@ -1,4 +1,7 @@
 <% if @cur_page.categories.present? %>
+<% if @cur_page.category_upper_html.present? %>
+  <%= @cur_page.category_upper_html.html_safe %>
+<% end %>
 <section class="categories">
   <header><h2><%= @cur_page.t :categories %></h2></header>
   <div class="nodes">
@@ -9,4 +12,7 @@
     </ul>
   </div>
 </section>
+<% if @cur_page.category_lower_html.present? %>
+  <%= @cur_page.category_lower_html.html_safe %>
+<% end %>
 <% end %>

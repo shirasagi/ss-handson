@@ -36,6 +36,7 @@ end
 
 %>
 <%= jquery do %> SS_AddonTabs.hide(".mod-category-category"); <% end %>
+<%= code_editor ".mod-category-category .html", mode: :html %>
 
 <dl class="see mod-category-category category-form">
   <dt class="wide"><%= @model.t :categories %><%= @model.tt :categories %></dt>
@@ -47,4 +48,11 @@ end
       <%= cate_form cate %></div>
     <% end %>
   </dd>
+
+  <dt class="wide"><%= @model.t :category_upper_html %><%= @model.tt :category_upper_html %></dt>
+  <dd class="wide"><%= f.text_area :category_upper_html, class: :html %></dd>
+
+  <dt class="wide"><%= @model.t :category_lower_html %><%= @model.tt :category_lower_html %></dt>
+  <dd class="wide"><%= f.text_area :category_lower_html, class: :html %></dd>
 </dl>
+
