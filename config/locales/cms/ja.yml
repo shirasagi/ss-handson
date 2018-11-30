@@ -226,6 +226,9 @@ ja:
         cloudy: 曇り
         rain: 雨
         snow: 雪
+        thunder: 雷注意⚡
+        shower: にわか雨☔
+        fine: 花見日より🌸
 
     sns_share:
       fb_like: Facebook いいね！

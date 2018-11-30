@@ -9,7 +9,7 @@ module Cms::Addon
     end
 
     def weather_options
-      %w(sunny cloudy rain snow).map do |v|
+      %w(sunny cloudy rain snow thunder shower fine).map do |v|
         [ I18n.t("cms.options.weather.#{v}"), v ]
       end
     end
