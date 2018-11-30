@@ -9,9 +9,9 @@ module Cms::Addon
     end
 
     def weather_options
-      [ ["晴れ", "sunny"], ["曇り", "cloudy"],
-        ["雨", "rain"], ["雪", "snow"],
-      ]
+      %w(sunny cloudy rain snow).map do |v|
+        [ I18n.t("cms.options.weather.#{v}"), v ]
+      end
     end
   end
 end
